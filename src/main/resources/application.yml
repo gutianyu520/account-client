@@ -1,1 +1,19 @@
+#添加thymeleaf配置
+spring:
+  application:
+    name: account-client
+  profiles:
+    active: company
+  thymeleaf:
+    cache: false
+    prefix: classpath:/static/views/
+    mode: LEGACYHTML5
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+
 
